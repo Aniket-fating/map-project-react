@@ -1040,10 +1040,12 @@ export default function Map() {
                                 <div id="division-map-container" className="h-full w-full ">
                                     <MapContainer
                                         center={[19.7515, 75.7139]}
+                                        minZoom={6}
                                         maxZoom={10}
                                         style={{ height: "100%", width: "100%" }}
                                         dragging={false}
                                     >
+                                        
                                         <GeoJSON
                                             key={layerKey}
                                             data={mapData}
